@@ -1,0 +1,11 @@
+#Spark installation on Ubuntu
+
+sudo apt update
+sudo apt upgrade
+sudo apt install default-jdk scala
+tar -xvzf spark-3.3.1-bin-hadoop3-scala2.13.tgz
+mv spark-3.3.1-bin-hadoop3-scala2.13 spark
+nano .zshrc
+source .zshrc
+start-master.sh
+spark-shell
